@@ -1,0 +1,24 @@
+3 5
+num:4 ans:0
+1 num one temp
+loop1:5 sqval temp jump1
+2 sqnum two ans
+3 stop
+jump1:7 zero sqval
+7 sqnum count 
+loop2:4 count zero jump2
+1 sqval sqnum sqval
+2 count one count
+3 loop2
+jump2:1 sqnum one sqnum
+3 loop1
+
+temp:0 
+sqval:0 
+sqnum:1
+zero:0
+one:1
+two:2
+count:0
+
+stop:9
