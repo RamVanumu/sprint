@@ -1,0 +1,58 @@
+3 start 1 1 1 1
+cell:c1 zero:0 one:1 nine:9 seven:7 value:1 row:c1 col:c1 grid:c1 rowend:0 colend:0 count:1 eight:8 e1:81 three:3 six:6 ten:10 rowcount:1 colcount:1  
+
+start:7 cell celladr
+
+cellcheck:4 celladr:0 zero rowstart
+nextcell:1 celladr one celladr
+7 one value
+3 cellcheck
+
+rowstart:7 row rowadr
+1 rowadr nine rowend
+
+rowcheck:4 rowadr:0 value nextvalue
+1 rowadr one rowadr
+4 rowadr rowend colstart
+3 rowcheck    
+
+colstart:7 col coladr
+1 coladr e1 colend
+
+colcheck:4 coladr:0 value nextvalue
+1 coladr nine coladr
+4 coladr colend gridstart
+3 colcheck
+
+gridstart:7 grid gridadr
+
+gridcheck:4 gridadr:0 value nextcell
+4 count three change7
+4 count six change7
+1 count one count
+1 gridadr one gridadr
+4 count ten placevalue
+3 gridcheck
+change7:1 gridadr seven gridadr
+1 count one count
+4 count ten stop
+3 gridcheck
+
+placevalue:7 celladr placecell
+7 value placecell:0
+3 nextcell
+
+nextvalue:1 value one value
+3 rowstart
+
+stop:9
+
+c1:1 0 2 0 7 5 4 0 9
+   3 5 0 6 0 0 2 0 0
+   7 0 6 0 2 0 0 0 5
+   9 0 0 4 0 0 7 0 3
+   2 7 0 0 0 6 9 0 8
+   0 0 0 7 0 0 6 0 0
+   6 0 0 0 0 0 0 9 0
+   0 0 0 0 0 4 1 3 0
+   5 0 3 9 0 0 0 0 0
