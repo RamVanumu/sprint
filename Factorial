@@ -1,0 +1,18 @@
+3 5
+num:1 ans:1
+5 num two stop
+7 num temp
+2 num one nextnum
+loop1:4 nextnum one jump1
+loop2:5 temp one jump2
+1 hold nextnum hold
+2 temp one temp
+3 loop2
+jump2:7 hold temp
+7 zero hold
+2 nextnum one nextnum
+3 loop1
+jump1:7 temp ans
+3 stop
+temp:0 hold:0 one:1 two:2 nextnum:0 zero:0
+stop:9
