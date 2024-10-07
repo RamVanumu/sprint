@@ -1,0 +1,18 @@
+3 7
+firstEle:35 length:5 target:2 res:0 
+
+
+loop:4 zero length stop
+4 address:35 target change_ans
+1 address one address
+2 length one length
+3 loop
+
+
+change_ans:1 res one res
+3 stop
+check:0
+one:1
+zero:0
+stop:9
+e1:1 e2:42 e3:43 e4:46 e5:2
