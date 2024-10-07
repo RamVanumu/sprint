@@ -1,0 +1,103 @@
+3 start
+
+
+
+
+instr:0 pointer1:0
+start:0 dup:p_start pointer1
+2 dup one switch
+7 pointer1 pointer
+
+checkNxt:7 pointer:0 instr
+4 instr zero Fun0
+4 instr one Fun1
+4 instr two Fun2
+4 instr three Fun3
+4 instr four Fun4
+4 instr five Fun5
+4 instr seven Fun7
+4 instr nine pNine
+7 instr fail
+fail:0
+
+
+Fun0:1 pointer one z1
+1 pointer two z2
+7 z1:0 A
+1 switch z2:0 z3
+0 A z3:0
+1 pointer three pointer
+3 checkNxt
+
+Fun1:1 pointer one o1
+1 pointer two o2
+1 pointer three o3
+1 o1:0 switch o4
+1 o2:0 switch o5
+1 o3:0 switch o6
+1 o4:0 o5:0 o6:0
+1 four pointer pointer
+3 checkNxt
+
+
+Fun2:1 pointer one t1
+1 pointer two t2
+1 pointer three t3
+1 t1:0 switch t4
+1 t2:0 switch t5
+1 t3:0 switch t6
+2 t4:0 t5:0 t6:0
+1 four pointer pointer
+3 checkNxt
+
+Fun3:1 pointer one th1
+7 th1:0 A
+1 switch A pointer
+3 checkNxt
+
+Fun4:1 pointer one f1
+1 pointer two f2
+1 pointer three f3
+1 f1:0 switch f4
+1 f2:0 switch f5
+1 f3:0 switch f6
+4 f4:0 f5:0 true4
+1 four pointer pointer
+true4:0 f6:0 pointer
+3 checkNxt
+
+
+Fun5:1 pointer one ff1
+1 pointer two ff2
+1 pointer three ff3
+1 ff1:0 switch ff4
+1 ff2:0 switch ff5
+1 ff3:0 switch ff6
+5 ff4:0 ff5:0 true5
+1 four pointer pointer
+true5:0 ff6:0 pointer
+3 checkNxt
+
+
+Fun7:1 pointer one s1
+1 pointer two s2
+1 s1:0 switch s3
+1 s2:0 switch s4
+7 s3:0 s4:0
+1 three pointer pointer
+3 checkNxt
+
+
+zero:0
+one:1
+two:2
+three:3
+four:4
+five:5
+seven:7
+nine:9
+switch:0
+A:0
+pNine:9
+
+p_start:3 6 1 2 0 1 3 4 5 9
